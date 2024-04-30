@@ -10,6 +10,10 @@ function Counter() {
 
     const decrement = () => {
         setCount(count-1);
+        if (count<=0)
+        {
+            setCount(0);
+        }
     };
 
     return (
